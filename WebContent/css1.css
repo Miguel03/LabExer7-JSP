@@ -1,0 +1,206 @@
+@CHARSET "ISO-8859-1";
+body{
+background-image: url('bg3.jpg');
+background-size:cover;
+
+}
+
+#header{
+	height: 300px;
+	width: 1333px;
+	background-image: url('bg.jpg');
+	
+	border: 2px #D63375 solid;
+}
+
+
+
+.navs{
+    position:fixed;	
+    margin-top:35px;
+    margin-left:-10px;
+}
+
+#h1{
+	position:absolute;
+	margin-top:7.5px;
+	margin-left:220px;
+	font-family:Cambria;
+}
+
+
+a{
+	color:black;
+	text-decoration:none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover{
+	text-decoration:underline;
+	background-color:white;
+	
+}
+
+#home{
+	height:42px;
+	width:180px;
+	background-color:white;
+	border-radius:2%;
+	border: 0.5px #D63375 solid;
+	font-family:Verdana;
+	opacity:0.6;
+}
+#about{
+	height:42px;
+	width:180px;
+	background-image:url('bg5.jpg');
+	border-radius:2%;
+	border: 0.5px #D63375 solid;
+	font-family:Verdana;
+}
+#products{
+	height:42px;
+	width:180px;
+	background-color:white;
+	border-radius:2%;
+	font-family:Verdana;
+	border: 0.5px #D63375 solid;
+	opacity:0.6;
+}
+#faqs{
+	height:42px;
+	width:180px;
+	font-family:Verdana;
+	background-color:white;
+	border-radius:2%;
+	border: 0.5px #D63375 solid;
+	opacity:0.6;
+}
+#order{
+	height:42px;
+	width:180px;
+	background-color:white;
+	border-radius:2%;
+	font-family:Verdana;
+	border: 0.5px #D63375 solid;
+	opacity:0.6;
+}
+
+#au{
+	height:300px;
+	width:280px;
+	position:absolute;
+	margin-left:970px;
+	margin-top:70px;
+	border: 0.5px #D63375 solid;
+}
+
+.ceo{
+	font-size:12px;
+	position:absolute;
+	margin-left:1075px;
+	margin-top:400px;
+}
+
+#name{
+	font-size:15px;
+	text-decoration:underline ;
+	margin-top:-10px;
+	margin-left:-15px;
+}
+#header2{
+	position: absolute;
+	text-decoration:none;
+	border-radius: 2%;
+	
+    margin-top:-50px;
+    margin-left:370px;
+    height: 60px;
+    width:600px;
+	border: 2px #D63375 solid;
+	font-size:18px;
+	background-image:url('bg5.jpg')
+}
+
+
+.contact{
+	position: absolute;
+	text-decoration:none;
+	border-radius: 1%;
+	background-color:white;
+    height: 300px;
+    width:1050px;
+	border: 2px #D63375 solid;
+	font-size:18px;
+	margin-left:180px;
+	margin-top:550px;
+	opacity:0.6;
+}
+
+#twitter{
+	position:absolute;
+	height:200px;
+	width:200px;
+	margin-top:150px;
+	margin-left:50px;
+}
+
+#facebook{
+	position:absolute;
+	height:220px;
+	width:220px;
+	margin-left:420px;
+	margin-top:140px
+}
+
+#ig{
+	position:absolute;
+	height:240px;
+	width:240px;
+	margin-left:780px;
+	margin-top:130px;
+}
+
+
+
+#t{
+	position:absolute;
+	margin-left: 110px;
+	margin-top:40px;
+	color: blue;
+}
+
+#fb{
+	position:absolute;
+	margin-left:490px;
+	margin-top:40px;
+	color: blue;
+}
+
+#i{
+	position:absolute;
+	margin-left: 865px;
+	margin-top:40px;
+	color:blue;
+}
+#aboutUs{
+	position:absolute;
+	
+}
+
+.abus{
+    position: absolute;
+	text-decoration:none;
+	border-radius: 1%;
+	background-color:white;
+    height: 300px;
+    width:740px;
+	border: 2px #D63375 solid;
+	font-size:23px;
+	margin-left:200px;
+	margin-top:70px;
+	opacity:0.6;
+	font-family:Verdana;
+	
+}

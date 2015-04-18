@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+<script type = "text/javascript">  
+function validateform(){  
+var name=document.getElementById("iname").value; 
+var age=document.getElementById("iage").value;
+var pnumber = document.getElementById("ipnumber").value;
+var cnumber = document.getElementById("icnumber").value;
+var iemail = document.getElementById("iemail").value;
+var occasion = document.getElementById("occasion").value;
+var cname = document.getElementById("cname").value;
+var add = document.getElementById("add").value;
+  
+if (name==null || name=="")
+   {  
+  alert("Please fill up the name box");  
+  return false;  
+   }
+else if(!isNaN(name))
+	{
+	alert("Invalid Name");
+	return false;
+	}
+else if(age==null || age=="")
+   {  
+  alert("Please fill up the age box");  
+  return false;  
+  }  
+else if(isNaN(age))
+	{
+	alert("Only numeric symbols are allowed in the age box");
+	return false;
+	}
+else if(age < 18)
+	{
+	alert("Sorry, you must be 18 and above to make an order");
+	}
+else if(pnumber==null || pnumber=="")
+{  
+alert("Please fill up the phone number box");  
+return false;  
+}  
+else if(isNaN(pnumber))
+{
+alert("Only numeric symbols are allowed in the phone number box");
+return false;
+}
+else if(pnumber.length != 7)
+{
+alert("Phone number should contain 7 digits without dash")	
+return false;
+}
+else if(cnumber==null || cnumber=="")
+{  
+alert("Please fill up the cellphone number box");  
+return false;  
+}  
+else if(isNaN(cnumber))
+{
+alert("Only numeric symbols are allowed in the cellphone number box");
+return false;
+}
+else if(cnumber.length != 11)
+{
+alert("Cellphone number should contain 11 digits without dash")	
+return false;
+}
+else if(iemail==null || iemail=="")
+{  
+alert("Please fill up the email address box");  
+return false;  
+}  
+else if(occasion==null)
+{  
+alert("Please check one of the boxes");  
+return false;  
+}  
+else if(cname == null)
+     {
+	 alert("Please indicate the celebrants name");
+	 return false;
+     }
+else if(add == null)
+	{
+	alert("Please add additional information");
+	}
+
+var r = document.getElementsByName("c")
+var c = 0
+
+for(var i=0; i < r.length; i++){
+   if(c[i].checked) {
+      return true;
+      }
+}
+
+else{
+	alert("Submit Successful");
+	return true;
+}
+
+
+
+}  
+
+</script>  
+
+<script type ="text/javascript">
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "sss1.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "sss2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "sss3.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "ss4.jpg"
+</script>
+<meta charset="ISO-8859-1">
+<link type = "text/css" rel = "stylesheet" href = "css5.css">
+</head>
+
+<body>
+<form method="post" action="abc.jsp" onsubmit="return validateform()" >  
+<div id = "header"><h2><center></h2></div>
+<div id = "header2"><h1 id = "h1"><center>Our Designs</center></h1></div>
+
+
+<img src="sss1.jpg" id="slide" style = "height:450px; width:750px; position:absolute; margin-top:40px; margin-left:300px;border:2px #D63375 solid;" />
+
+<script type="text/javascript">
+var step=0
+	function slideit(){
+	 //if browser does not support the image object, exit.
+	 if (!document.images)
+	  return
+	 document.getElementById('slide').src = slideimages[step].src
+	 if (step<2)
+	  step++
+	 else
+	  step=0
+	 //call function "slideit()" every 2.5 seconds
+	 setTimeout("slideit()",2000)
+	}
+
+	slideit()
+</script>
+<div class = "new">
+<div id = "imageSlideshow3">
+<h4>We need some of your personal information:</h4><br>
+<p>Name:*</p>
+<input type ="text" name= "name" id ="iname"><br>
+<p>Age:*</p>
+<input type ="text" name= "age" id = "iage"><br>
+<p>Phone Number:(7 digits)*</p>
+<input type = "text" name="pnumber" id = "ipnumber"><br>
+<p>Cellphone Number:(11 digits)*</p>
+<input type = "text" name="cnumber" id = "icnumber"><br>
+<p>Email address:*</p>
+<input type = "text" name="email" id = "iemail"><br><br>
+<p>* = Required Fields</p>
+<br><br>
+
+</div>
+
+
+
+<div id = "imageSlideshow2">
+<h4>Fill up for us to know the details about the cake:*</h4>
+<p>Occasion:</p>
+<p><input type="radio" name="occasion" value="birthday" id ="occasion"> Birthday<br>
+<input type="radio" name="occasion" value="marriage" id ="occasion"> Marriage<br>
+<input type="radio" name="occasion" value="anniv" id ="occasion"> Anniversary<br>
+<input type="radio" name="occasion" value="month" id ="occasion"> Monthsary<br>
+<input type="radio" name="occasion" value="others" id ="occasion"> Others<br>
+<p>If others, please specify:</p>
+<input type = "text" name="occasion">
+
+<p>Name of Celebrant(s):</p>
+<input type ="text" name= "cname" id ="cname"><br>
+
+<p>Additional information:</p>
+<input type = "text" name = "infos"id = "add"><br>
+
+<p><i>Please check the boxes which corresponds to the product you wish to order:</i></p>
+<p><input type="checkbox" name="option1order" value="rvc"> Red Velvet Cake<br>
+<input type="checkbox" name="option1order" value="gc"> Gift Cake<br>
+<input type="checkbox" name="option1order" value="rhac"> Rosette Heartcake and cupcakes<br>
+<input type="checkbox" name="option1order" value="jcac"> Jordan Cake and cupcakes<br><br>
+
+</div>
+
+
+<input type ="submit" name= "submit" value="Submit" id ="submit"><br>
+
+</div>
+<div class = "navs">
+<div id = "home"><a href = "index.html"><center>Home</center></a></div>
+<div id = "about"><a href = "aboutUs.html"><center>About Us</center></a></div>
+<div id = "products"><a href = "products.html"><center>Products</center></a></div>
+<div id = "faqs"><a href = "faqs.html"><center>FAQs</center></div>
+<div id = "order"><a href = "orderNow.html"><center>Order Now</center></a></div>
+</div>
+</form>
+</body>
+</html>

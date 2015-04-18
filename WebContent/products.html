@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link type = "text/css" rel = "stylesheet" href = "css2.css">
+<script type ="text/javascript">
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "sss1.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "sss2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "sss3.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "ss4.jpg"
+</script>
+</head>
+<body>
+<div id = "header"><h2><center></h2></div>
+<div id = "header2"><h1 id = "h1"><center>Products</center></h1></div>
+
+<img src="sss1.jpg" id="slide" style = "height:450px; width:750px; position:absolute; margin-top:40px; margin-left:300px;border:2px #D63375 solid;" />
+
+<script type="text/javascript">
+var step=0
+	function slideit(){
+	 //if browser does not support the image object, exit.
+	 if (!document.images)
+	  return
+	 document.getElementById('slide').src = slideimages[step].src
+	 if (step<2)
+	  step++
+	 else
+	  step=0
+	 //call function "slideit()" every 2.5 seconds
+	 setTimeout("slideit()",2000)
+	}
+
+	slideit()
+</script>
+<div class = "new">
+<p id ="here"> Here are some of our products:</p>
+<img src = "cake1.jpg" id = "cake1"></img>
+<img src = "cake2.jpg" id = "cake2"></img>
+<img src = "cake3.jpg" id = "cake3"></img>
+<img src = "cake4.jpg" id = "cake4"></img>
+
+<p id ="des1"><b>Red Velvet Cake</b><br>Price: P900<br>Status: Available</p>
+<p id ="des2"><b>Formal Red Cake (For marriage, debuts, birthdays)</b><br>Price: P1300<br>Status: Unavailable</p>
+<p id ="des3"><b>Rosette Heartcake and cupcakes</b><br>Price: P1500<br>Status: Available</p>
+<p id ="des4"><b>Jordan Cake and cupcakes</b><br>Price: P1900<br>Status: Available</p>
+</div>
+
+<div class = "navs">
+<div id = "home"><a href = "index.html"><center>Home</center></a></div>
+<div id = "about"><a href = "aboutUs.html"><center>About Us</center></a></div>
+<div id = "products"><center>Products</center></div>
+<div id = "faqs"><a href = "faqs.html"><center>FAQs</center></a></div>
+<div id = "order"><a href = "orderNow.html"><center>Order Now</center></a></div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@CHARSET "ISO-8859-1";
+body{
+background-image: url('bg3.jpg');
+background-size:cover;
+}
+
+#header{
+	height: 300px;
+	width: 1333px;
+	background-image: url('bg.jpg');
+	border: 2px #D63375 solid;
+}
+
+
+
+
+.navs{
+    position:fixed;	
+    margin-top:35px;
+    margin-left:-10px;
+}
+
+#header2{
+	position: absolute;
+	text-decoration:none;
+	border-radius: 2%;
+	
+    margin-top:-50px;
+    margin-left:370px;
+    height: 60px;
+    width:600px;
+	border: 2px #D63375 solid;
+	font-size:18px;
+	background-image:url('bg5.jpg')
+
+}
+
+#h1{
+	position:absolute;
+	margin-top:10px;
+	margin-left:180px;
+	font-family:Cambria;
+
+}
+
+a{
+	color:black;
+	text-decoration:none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover{
+	text-decoration:underline;
+	background-color:white;
+	
+}
+
+#home{
+	height:42px;
+	width:180px;
+	background-color:white;
+	border-radius:2%;
+	border: 0.5px #D63375 solid;
+	opacity:0.6;
+	font-family:Verdana;
+}
+#about{
+	height:42px;
+	width:180px;
+	background-color:white;
+	border-radius:2%;
+	font-family:Verdana;
+	border: 0.5px #D63375 solid;
+	opacity:0.6;
+}
+#products{
+	height:42px;
+	width:180px;
+	background-color:white;
+	border-radius:2%;
+	font-family:Verdana;
+	border: 0.5px #D63375 solid;
+	opacity:0.6;
+}
+#faqs{
+	height:42px;
+	width:180px;
+	background-color:white;
+	border-radius:2%;
+	border: 0.5px #D63375 solid;
+	opacity:0.6;
+	font-family:Verdana;
+}
+#order{
+	height:42px;
+	width:180px;
+	background-color:white;
+	border-radius:2%;
+	border: 0.5px #D63375 solid;
+	opacity:0.6;
+	font-family:Verdana;
+	
+}
+
+.imageSlideshow{
+	height:1350px;
+	width:600px;
+	background-image:url('bg5.jpg');
+	border:2px #D63375 solid;
+	margin-top:40px;
+	margin-left:250px;
+	position:absolute;
+	opacity:0.6;
+	
+}
+
+#slide{
+	font-size:30px;
+	margin-top:50px;
+	margin-left:320px;
+	opacity:0.6;
+}
+
+p{
+	font-family:Verdana;
+}
+#here{
+	font-size:35px;
+	position:absolute;
+	margin-top:210px;
+	margin-left:250px;
+	opacity:0.6;
+}
+
+#add{
+	height:100px;
+	width:200px;
+	
+}
+
+#submit{
+	height:60px;
+	width:80px;
+    margin-top:-20px;
+}
