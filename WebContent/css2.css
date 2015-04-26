@@ -10,15 +10,25 @@ background-size:cover;
 	background-image: url('bg.jpg');
 	border-radius: 2%;
 	border: 2px #D63375 solid;
+	margin-left:10px;
 }
 
 
 
 
-.navs{
-    position:fixed;	
-    margin-top:35px;
-    margin-left:-10px;
+.tabs{
+	height:36px;
+	width:1200px;
+	position:absolute;
+	background-image:url('bg5.jpg');;
+	border-radius:2%;
+	font-size:27px;
+	margin-top:-20px;
+	margin-left:68px;
+	border: 2px #D63375 solid;
+	
+	font-family:Verdana;
+	
 }
 
 #header2{
@@ -26,7 +36,7 @@ background-size:cover;
 	text-decoration:none;
 	border-radius: 2%;
 	
-    margin-top:-50px;
+    margin-top:-80px;
     margin-left:370px;
     height: 60px;
     width:600px;
@@ -189,4 +199,16 @@ a:hover{
 	margin-top:400px;
 	position:absolute;
 
+}
+
+#HCB_comment_box{
+	background-image:url('bg5.jpg');
+	border:1px solid #D63375;
+	border-radius:2%;
+	opacity:0.8;
+	margin-left:25px;
+}
+
+.carousel .item { 
+    transition-delay: opacity 3s;
 }

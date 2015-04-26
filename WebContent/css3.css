@@ -24,7 +24,7 @@ background-size:cover;
 	text-decoration:none;
 	border-radius: 1%;
 	background-color:white;
-    height: 640px;
+    height: 670px;
     width:970px;
 	border: 2px #D63375 solid;
 	font-size:23px;
@@ -32,13 +32,23 @@ background-size:cover;
 	margin-top:70px;
 	opacity:0.6;
 	font-family:Verdana;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	
+}
+
+span{
+	color:#D63375;
 }
 
 .navs{
     position:fixed;	
     margin-top:35px;
     margin-left:-10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 #header2{
 	position: absolute;

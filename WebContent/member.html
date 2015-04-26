@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign up</title>
+<link type = "text/css" rel = "stylesheet" href = "css9.css">
+<script type = "text/javascript">  
+function validateform(){  
+var name=document.getElementById("iname").value; 
+var age=document.getElementById("iage").value;
+var pnumber = document.getElementById("ipnumber").value;
+var cnumber = document.getElementById("icnumber").value;
+var iemail = document.getElementById("iemail").value;
+
+if (name==null || name=="")
+{  
+alert("Please fill up the name box");  
+return false;  
+}
+else if(!isNaN(name))
+	{
+	alert("Invalid Name");
+	return false;
+	}
+else if(age==null || age=="")
+{  
+alert("Please fill up the age box");  
+return false;  
+}  
+else if(isNaN(age))
+	{
+	alert("Only numeric symbols are allowed in the age box");
+	return false;
+	}
+else if(age < 18)
+	{
+	alert("Sorry, you must be 18 and above to make an order");
+	}
+else if(pnumber==null || pnumber=="")
+{  
+alert("Please fill up the phone number box");  
+return false;  
+}  
+else if(isNaN(pnumber))
+{
+alert("Only numeric symbols are allowed in the phone number box");
+return false;
+}
+else if(pnumber.length != 7)
+{
+alert("Phone number should contain 7 digits without dash")	
+return false;
+}
+else if(cnumber==null || cnumber=="")
+{  
+alert("Please fill up the cellphone number box");  
+return false;  
+}  
+else if(isNaN(cnumber))
+{
+alert("Only numeric symbols are allowed in the cellphone number box");
+return false;
+}
+else if(cnumber.length != 11)
+{
+alert("Cellphone number should contain 11 digits without dash")	
+return false;
+}
+else if(iemail==null || iemail=="")
+{  
+alert("Please fill up the email address box");  
+return false;  
+}  
+
+var r = document.getElementsByName("c")
+var c = 0
+
+for(var i=0; i < r.length; i++){
+   if(c[i].checked) {
+      return;
+      }
+
+}
+
+</script>
+</head>
+<body>
+<form method="post" action="home.jsp" onsubmit="return validateform()" >
+<div class="page-header">
+   <center> <h1>WELCOME TO</h1></center>
+</div>
+
+<div id = "header"><h2><center></center></h2></div>
+
+<div><h4>Please Fill up the following infos:</h4><br></div>
+
+<div class = "new">
+<div id = "imageSlideshow3">
+<p>Name:*</p>
+<input type ="text" name= "name" id ="iname"><br>
+<p>Age:*</p>
+<input type ="text" name= "age" id = "iage"><br>
+<p>Phone Number:(7 digits)*</p>
+<input type = "text" name="pnumber" id = "ipnumber"><br>
+<p>Cellphone Number:(11 digits)*</p>
+<input type = "text" name="cnumber" id = "icnumber"><br>
+<p>Email address:*</p>
+<input type = "text" name="email" id = "iemail"><br><br>
+<p>* = Required Fields</p>
+<br><br>
+
+<input type ="submit" name= "submit" value="Submit" id ="submit">
+</div>
+</form>
+</body>
+</html>

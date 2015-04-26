@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome Guest</title>
+<script type = "text/javascript">  
+function validateform(){  
+var name=document.getElementById("iname").value;
+
+if (name==null || name=="")
+{  
+alert("Please fill up the name box");  
+return false;  
+}
+else if(!isNaN(name))
+	{
+	alert("Invalid Name");
+	return false;
+	}
+var r = document.getElementsByName("c")
+var c = 0
+
+for(var i=0; i < r.length; i++){
+   if(c[i].checked) {
+      return;
+      }
+
+}
+</script>
+<link type = "text/css" rel = "stylesheet" href = "css8.css">
+</head>
+<body>
+<form method = "post" action = "home.jsp" onsubmit="return validateform()">
+<div class="page-header">
+   <center> <h1>WELCOME TO</h1></center>
+</div>
+
+<div id = "header"><h2><center></center></h2></div>
+
+
+<div>
+<div id = "option1"><a href="home.jsp" id = "idoption1" style ="font-family: Arial"><center><b>Continue as guest</b></center></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Name: </b>
+<input type ="text" id = "iname" value = "guest" name = "name" style= "background: transparent;">
+</div>
+<div id = "option2"><a href="member.html" id = "idoption2" style ="font-family: Arial; font-size: 60"><center><b>Sign up as Member</b></center></a></div>
+</div>
+</form>
+</body>
+</html>

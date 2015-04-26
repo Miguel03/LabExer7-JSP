@@ -2,82 +2,22 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link type = "text/css" rel = "stylesheet" href = "css.css">
-<script type = "text/javascript">
-
-var slideimages = new Array() // create new array to preload images
-slideimages[0] = new Image() // create new instance of image object
-slideimages[0].src = "ss1.jpg" // set image src property to image path, preloading image in the process
-slideimages[1] = new Image()
-slideimages[1].src = "ss2.jpg"
-slideimages[2] = new Image()
-slideimages[2].src = "ss3.jpg"
-slideimages[3] = new Image()
-slideimages[3].src = "ss4.jpg"
-
-
-
-</script>
-
+<title>Welcome</title>
+<link type = "text/css" rel = "stylesheet" href = "css7.css">
 </head>
 <body>
+<div class="page-header">
+   <center> <h1>WELCOME TO</h1></center>
+</div>
+
 <div id = "header"><h2><center></center></h2></div>
-<div class = "tabs">
-<center>
-<a href = "index.html">Home |</a>
-<a href = "aboutUs.html">About Us |</a>
-<a href = "products.html">Products |</a>
-<a href = "faqs.html">FAQs |</a>
-<a href = "orderNow.html">Order Now</a>
-</center>
+
+<form>
+<div>
+<div id = "option1"><a href="guest.html" id = "idoption1" style ="font-family: Arial"><center><b>Continue as guest</b></center></a></div>
+<div id = "option2"><a href="member.html" id = "idoption2" style ="font-family: Arial; font-size: 60"><center><b>Sign up as Member</b></center></a></div>
 </div>
-<img src="ss1.jpg" id="slide" width="400" height="600" />
-
-<script type="text/javascript">
-var step=0
-	function slideit(){
-	 //if browser does not support the image object, exit.
-	 if (!document.images)
-	  return
-	 document.getElementById('slide').src = slideimages[step].src
-	 if (step<2)
-	  step++
-	 else
-	  step=0
-	 //call function "slideit()" every 2.5 seconds
-	 setTimeout("slideit()",2000)
-	}
-
-	slideit()
-</script>
-
-
-								
-						
-
-
-
-<div class = "words">
-<h1 style="font-family:Aharoni; font-size:40px; font-color:#D63375;"><center>Announcements:</center></h1>
-
-<p style="background-image: url('bg5.jpg'); border: 1px solid #D63375"><u>March 9, 2015</u></p><br>
-<ul>
-<li>Choco Caramel Cake w/ Chocofudge Frosting and Filling and Creamy Caramel on top now ready to serve ya!</li><br>
-<li>The Red Velvet Cake w/ Cream Cheese Frosting sale is over... </li>
-</ul>
-<br>
-
-<p style="background-image: url('bg5.jpg'); border: 1px solid #D63375"><u>March 6, 2015</u></p><br>
-<ul>
-<li>Red Velvet Cake w/ Cream Cheese Frosting is on SALE!!!</li> <br>
-<li>Brownies is on a buy 1 take 1 promo. Grab yours now...</li>
-</ul>
-<br><br>
-<p style="background-image: url('bg5.jpg'); border: 1px solid #D63375"><u>March 2, 2015</u></p><br>
-<ul>
-<li>Frozen cake(Disney) design is now available. View Products for sample images</li>
-</ul>
-</div>
+</form>
 
 </body>
 </html>

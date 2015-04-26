@@ -2,80 +2,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-
-
-<script type = "text/javascript">  
-function validateform(){  
-var name=document.getElementById("iname").value; 
-var age=document.getElementById("iage").value;
-var pnumber = document.getElementById("ipnumber").value;
-var cnumber = document.getElementById("icnumber").value;
-var iemail = document.getElementById("iemail").value;
+<title>Choose cake</title>
+<script type = "text/javascript">
 var occasion = document.getElementById("occasion").value;
 var cname = document.getElementById("cname").value;
 var add = document.getElementById("add").value;
-  
-if (name==null || name=="")
-   {  
-  alert("Please fill up the name box");  
-  return false;  
-   }
-else if(!isNaN(name))
-	{
-	alert("Invalid Name");
-	return false;
-	}
-else if(age==null || age=="")
-   {  
-  alert("Please fill up the age box");  
-  return false;  
-  }  
-else if(isNaN(age))
-	{
-	alert("Only numeric symbols are allowed in the age box");
-	return false;
-	}
-else if(age < 18)
-	{
-	alert("Sorry, you must be 18 and above to make an order");
-	}
-else if(pnumber==null || pnumber=="")
-{  
-alert("Please fill up the phone number box");  
-return false;  
-}  
-else if(isNaN(pnumber))
-{
-alert("Only numeric symbols are allowed in the phone number box");
-return false;
-}
-else if(pnumber.length != 7)
-{
-alert("Phone number should contain 7 digits without dash")	
-return false;
-}
-else if(cnumber==null || cnumber=="")
-{  
-alert("Please fill up the cellphone number box");  
-return false;  
-}  
-else if(isNaN(cnumber))
-{
-alert("Only numeric symbols are allowed in the cellphone number box");
-return false;
-}
-else if(cnumber.length != 11)
-{
-alert("Cellphone number should contain 11 digits without dash")	
-return false;
-}
-else if(iemail==null || iemail=="")
-{  
-alert("Please fill up the email address box");  
-return false;  
-}  
-else if(occasion==null)
+
+if(occasion==null)
 {  
 alert("Please check one of the boxes");  
 return false;  
@@ -103,8 +36,7 @@ for(var i=0; i < r.length; i++){
 
 
 }  
-
-</script>  
+</script>
 
 <script type ="text/javascript">
 var slideimages = new Array() // create new array to preload images
@@ -118,7 +50,7 @@ slideimages[3] = new Image()
 slideimages[3].src = "ss4.jpg"
 </script>
 <meta charset="ISO-8859-1">
-<link type = "text/css" rel = "stylesheet" href = "css5.css">
+<link type = "text/css" rel = "stylesheet" href = "css10.css">
 </head>
 
 <body>
@@ -146,25 +78,6 @@ var step=0
 
 	slideit()
 </script>
-<div class = "new">
-<div id = "imageSlideshow3">
-<h4>We need some of your personal information:</h4><br>
-<p>Name:*</p>
-<input type ="text" name= "name" id ="iname"><br>
-<p>Age:*</p>
-<input type ="text" name= "age" id = "iage"><br>
-<p>Phone Number:(7 digits)*</p>
-<input type = "text" name="pnumber" id = "ipnumber"><br>
-<p>Cellphone Number:(11 digits)*</p>
-<input type = "text" name="cnumber" id = "icnumber"><br>
-<p>Email address:*</p>
-<input type = "text" name="email" id = "iemail"><br><br>
-<p>* = Required Fields</p>
-<br><br>
-
-</div>
-
-
 
 <div id = "imageSlideshow2">
 <h4>Fill up for us to know the details about the cake:*</h4>
@@ -187,10 +100,13 @@ var step=0
 <p><input type="checkbox" name="option1order" value="rvc"> Red Velvet Cake<br>
 <input type="checkbox" name="option1order" value="gc"> Gift Cake<br>
 <input type="checkbox" name="option1order" value="rhac"> Rosette Heartcake and cupcakes<br>
-<input type="checkbox" name="option1order" value="jcac"> Jordan Cake and cupcakes<br><br>
+<input type="checkbox" name="option1order" value="jcac"> Jordan Cake and cupcakes<br>
+<input type ="submit" name= "submit" value="Submit" id ="submit">
 
 </div>
-<input type ="submit" name= "submit" value="Submit" id ="submit"><br>
+
+
+
 
 </div>
 <div class = "navs">
